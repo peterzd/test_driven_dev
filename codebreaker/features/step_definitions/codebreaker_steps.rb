@@ -19,6 +19,6 @@ When /^I start a new game$/ do
 	game.start
 end
 
-Then /^I shold see "(.*?)"$/ do |message|
+Then /^I should see "([^"]*)"$/ do |message|
 	output.messages.should include(message)
 end
